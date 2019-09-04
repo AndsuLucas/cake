@@ -1,0 +1,396 @@
+2019-09-03 19:24:59 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /posts/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#5 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#6 /home/andersonlucas/repositorios/cake/app/Controller/PostsController.php(14): Model->find('all')
+#7 [internal function]: PostsController->index()
+#8 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#13 {main}
+2019-09-03 19:25:44 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /posts/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Datasource/DboSource.php(278): Mysql->connect()
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#5 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /home/andersonlucas/repositorios/cake/app/Controller/PostsController.php(14): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#14 {main}
+2019-09-03 19:40:59 Error: [Error] Call to undefined method View::postLink()
+Request URL: /posts/view/1
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(971): include()
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(933): View->_evaluate('/home/andersonl...', Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(473): View->_render('/home/andersonl...')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#8 {main}
+2019-09-03 19:41:36 Error: [MissingActionException] Action PostsController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'delete',
+)
+Request URL: /posts/delete/1
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#4 {main}
+2019-09-03 19:48:07 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/1
+Stack Trace:
+#0 [internal function]: PostsController->delete('1')
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:48:31 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/1
+Stack Trace:
+#0 [internal function]: PostsController->delete('1')
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:54:00 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /posts/view/3
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(933): View->_evaluate('/home/andersonl...', Array)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(473): View->_render('/home/andersonl...')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 19:54:18 Error: [ParseError] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /posts/view/3
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(933): View->_evaluate('/home/andersonl...', Array)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(473): View->_render('/home/andersonl...')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 19:54:19 Error: [ParseError] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /posts/view/3
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(933): View->_evaluate('/home/andersonl...', Array)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(473): View->_render('/home/andersonl...')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 19:56:27 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:58:32 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:58:39 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:58:40 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:58:40 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:58:41 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:59:00 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:59:27 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 19:59:46 Error: [Error] Call to a member function delete() on null
+Request URL: /posts/delete/3
+Stack Trace:
+#0 [internal function]: PostsController->delete(3)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 20:12:58 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Posts/create
+Stack Trace:
+#0 [internal function]: PostsController->create()
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#6 {main}
+2019-09-03 20:35:23 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /Posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:35:42 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /Posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:35:43 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /Posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:35:43 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /Posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:35:43 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /Posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:38:52 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:39:14 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:39:15 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:39:41 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:40:57 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:40:58 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:40:58 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:40:59 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:41:25 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:41:28 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 20:41:33 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /Posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
