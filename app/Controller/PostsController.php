@@ -83,5 +83,18 @@ class PostsController extends AppController
         }  
 
     }
+    public function search():void
+    {
+        if ($this->request->is('post')) {
+            
+            $filter_params = $this->request->data; 
+            
+            $conditions = $this->postConditions($filter_params, ['id' => 'LIKE'] );
+            $posts = $this->Post->find('all', compact('conditions'));
+            debug($posts);
+            die();
+            $this->set("filtered_rows", $posts);
+        }
+    }
 
 }
