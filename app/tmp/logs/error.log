@@ -394,3 +394,306 @@ Stack Trace:
 #5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
 #7 {main}
+2019-09-03 22:01:06 Error: [MissingControllerException] Controller class PublicController could not be found.
+Exception Attributes: array (
+  'class' => 'PublicController',
+  'plugin' => NULL,
+)
+Request URL: /public
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:05:35 Error: [ParseError] syntax error, unexpected 'Controller' (T_STRING)
+Request URL: /Posts
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 22:05:35 Error: [ParseError] syntax error, unexpected 'Controller' (T_STRING)
+Request URL: /Posts
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 22:05:43 Error: [ParseError] syntax error, unexpected 'Controller' (T_STRING)
+Request URL: /Posts
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 22:05:43 Error: [ParseError] syntax error, unexpected 'Controller' (T_STRING)
+Request URL: /Posts
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 22:05:57 Error: [ParseError] syntax error, unexpected 'Controller' (T_STRING)
+Request URL: /Posts
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 22:05:57 Error: [ParseError] syntax error, unexpected 'Controller' (T_STRING)
+Request URL: /Posts
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#7 {main}
+2019-09-03 22:06:09 Error: [Error] Class 'Controller\Classes\AppController' not found
+Request URL: /Posts
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/Core/App.php(567): include()
+#1 [internal function]: App::load('PostsController')
+#2 [internal function]: spl_autoload_call('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#5 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#8 {main}
+2019-09-03 22:06:10 Error: [Error] Class 'Controller\Classes\AppController' not found
+Request URL: /Posts
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/Core/App.php(547): include()
+#1 [internal function]: App::load('PostsController')
+#2 [internal function]: spl_autoload_call('PostsController')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#5 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#6 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#8 {main}
+2019-09-03 22:12:21 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:13:41 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:13:41 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:13:41 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:13:41 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:13:42 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:14:04 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:15:39 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:15:40 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:15:40 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:15:41 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:15:41 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:15:41 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:15:41 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:15:42 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:17:39 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:17:40 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:17:40 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /Users/
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:17:58 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /users
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#2 {main}
+2019-09-03 22:29:41 Error: [ArgumentCountError] Too few arguments to function FormHelper::input(), 0 passed in /home/andersonlucas/repositorios/cake/app/View/Users/register.ctp on line 2 and at least 1 expected
+Request URL: /users/register
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/app/View/Users/register.ctp(2): FormHelper->input()
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(971): include('/home/andersonl...')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(933): View->_evaluate('/home/andersonl...', Array)
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/View/View.php(473): View->_render('/home/andersonl...')
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#5 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#6 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#9 {main}
