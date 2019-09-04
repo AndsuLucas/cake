@@ -1,0 +1,1 @@
+<h1>Redirect2</h1>

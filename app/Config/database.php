@@ -73,7 +73,7 @@ class DATABASE_CONFIG {
 		'host' => '127.0.0.1',
 		'port' => '',
 		'login' => 'root',
-		'password' => 'password',
+		'password' => '',
 		'database' => 'cake',
 	);
 	public $test = array(

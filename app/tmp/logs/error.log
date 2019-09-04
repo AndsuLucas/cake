@@ -394,3 +394,709 @@ Stack Trace:
 #5 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
 #7 {main}
+2019-09-04 07:53:50 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Model/Datasource/DboSource.php(278): Mysql->connect()
+#1 /home/anderson/repo/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/anderson/repo/cake/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /home/anderson/repo/cake/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /home/anderson/repo/cake/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#5 /home/anderson/repo/cake/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /home/anderson/repo/cake/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /home/anderson/repo/cake/app/Controller/PostsController.php(15): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#14 {main}
+2019-09-04 07:54:49 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /users
+Stack Trace:
+#0 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#2 {main}
+2019-09-04 08:07:36 Error: [MissingViewException] View file "Users/users.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/users.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/View/View.php(470): View->_getViewFileName('Users/users')
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(968): View->render('Users', 'view2')
+#2 /home/anderson/repo/cake/app/Controller/UsersController.php(14): Controller->render('Users', 'view2')
+#3 [internal function]: UsersController->index()
+#4 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#9 {main}
+2019-09-04 08:10:46 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:10:46 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:11:10 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:11:11 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:11:11 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:11:12 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:11:12 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:11:12 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:11:13 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:11:13 Error: [Error] Call to undefined method UsersController::autorender()
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:18:00 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /users/redirect
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:18:42 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /users/redirect
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:18:43 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /users/redirect
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:18:43 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /users/redirect
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:19:08 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /users/redirect
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:19:08 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /users/redirect
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:19:09 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /users/redirect
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:19:09 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /users/redirect
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:19:20 Error: [MissingViewException] View file "Users/redirecionamento.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/redirecionamento.ctp',
+)
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/View/View.php(470): View->_getViewFileName('Users/redirecio...')
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:26:01 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:26:10 Error: [MissingActionException] Action UsersController::redirect2() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect2',
+)
+Request URL: /users/redirect2
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:26:50 Error: [MissingActionException] Action UsersController::redirect2() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect2',
+)
+Request URL: /Users/redirect2
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:30:51 Error: [MissingActionException] Action UsersController::redirect2() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect2',
+)
+Request URL: /Users/redirect2
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:30:51 Error: [MissingActionException] Action UsersController::redirect2() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect2',
+)
+Request URL: /Users/redirect2
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:30:52 Error: [MissingActionException] Action UsersController::redirect2() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect2',
+)
+Request URL: /Users/redirect2
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#4 {main}
+2019-09-04 08:42:42 Error: [CakeException] Unknown status code
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(797): CakeResponse->statusCode(Array)
+#1 /home/anderson/repo/cake/app/Controller/UsersController.php(37): Controller->redirect(Array, Array)
+#2 [internal function]: UsersController->redirecionamento()
+#3 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#8 {main}
+2019-09-04 08:42:59 Error: [CakeException] Unknown status code
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(797): CakeResponse->statusCode(Array)
+#1 /home/anderson/repo/cake/app/Controller/UsersController.php(37): Controller->redirect(Array, Array)
+#2 [internal function]: UsersController->redirecionamento()
+#3 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#8 {main}
+2019-09-04 08:43:02 Error: [CakeException] Unknown status code
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(797): CakeResponse->statusCode(Array)
+#1 /home/anderson/repo/cake/app/Controller/UsersController.php(37): Controller->redirect(Array, Array)
+#2 [internal function]: UsersController->redirecionamento()
+#3 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#8 {main}
+2019-09-04 08:43:31 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:43:37 Error: [CakeException] Unknown status code
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(797): CakeResponse->statusCode(Array)
+#1 /home/anderson/repo/cake/app/Controller/UsersController.php(37): Controller->redirect(Array, Array)
+#2 [internal function]: UsersController->redirecionamento()
+#3 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#8 {main}
+2019-09-04 08:49:41 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:49:41 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:49:56 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:52:28 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:52:28 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:52:50 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:52:50 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:52:53 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:53:11 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:53:12 Error: [ArgumentCountError] Too few arguments to function UsersController::redirect1(), 0 passed and exactly 1 expected
+Request URL: /users/redirect1
+Stack Trace:
+#0 [internal function]: UsersController->redirect1()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 08:54:12 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirect1/0
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:54:19 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:54:21 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirect
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:54:21 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirect
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:54:38 Error: [MissingControllerException] Controller class RedirectionamentoController could not be found.
+Exception Attributes: array (
+  'class' => 'RedirectionamentoController',
+  'plugin' => NULL,
+)
+Request URL: /redirectionamento/
+Stack Trace:
+#0 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#2 {main}
+2019-09-04 08:54:44 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:54:53 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:54:54 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:54:54 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /users/redirecionamento
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:57:48 Error: [ParseError] syntax error, unexpected '/'
+Request URL: /users/redirect1/2
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 08:59:38 Error: [Error] Call to undefined method UsersController::refer()
+Request URL: /users/redirect1/2
+Stack Trace:
+#0 [internal function]: UsersController->redirect1(2)
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 09:14:26 Error: [MissingViewException] View file "Posts/search.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/search.ctp',
+)
+Request URL: /posts/search
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/View/View.php(470): View->_getViewFileName('Posts/search')
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 09:19:54 Error: [Error] Call to a member function findById() on null
+Request URL: /posts/search
+Stack Trace:
+#0 [internal function]: PostsController->search()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 09:20:23 Error: [Error] Call to undefined function redirect()
+Request URL: /posts/search
+Stack Trace:
+#0 [internal function]: PostsController->search()
+#1 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#6 {main}
+2019-09-04 09:21:19 Error: [ParseError] syntax error, unexpected ']'
+Request URL: /posts/index
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 09:25:18 Error: [MissingControllerException] Controller class SearchController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchController',
+  'plugin' => NULL,
+)
+Request URL: /search
+Stack Trace:
+#0 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#2 {main}
+2019-09-04 09:30:39 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /posts/search
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#7 {main}
+2019-09-04 09:40:17 Error: [MissingLayoutException] Layout file "Layouts/Array.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layouts/Array.ctp',
+)
+Request URL: /posts/search
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/View/View.php(514): View->_getLayoutFileName(Array)
+#1 /home/anderson/repo/cake/lib/Cake/View/View.php(481): View->renderLayout('', Array)
+#2 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(968): View->render('/Posts/index', Array)
+#3 /home/anderson/repo/cake/app/Controller/PostsController.php(95): Controller->render('/Posts/index', Array)
+#4 [internal function]: PostsController->search()
+#5 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#6 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#8 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#10 {main}
+2019-09-04 09:44:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'post.title' in 'where clause'
+Request URL: /posts/search
+Stack Trace:
+#0 /home/anderson/repo/cake/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /home/anderson/repo/cake/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /home/anderson/repo/cake/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /home/anderson/repo/cake/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `Post`.`...', Array)
+#4 /home/anderson/repo/cake/lib/Cake/Model/Model.php(3053): DboSource->read(Object(Post), Array)
+#5 /home/anderson/repo/cake/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#6 /home/anderson/repo/cake/app/Controller/PostsController.php(92): Model->find('all', Array)
+#7 [internal function]: PostsController->search()
+#8 /home/anderson/repo/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/anderson/repo/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /home/anderson/repo/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
+#13 {main}
