@@ -1406,3 +1406,49 @@ Stack Trace:
 #12 /home/anderson/repo/cake/index.php(41): require('/home/anderson/...')
 #13 {main}
 >>>>>>> refs/remotes/origin/master
+2019-09-04 17:37:26 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/andersonlucas/repositorios/cake/app/Controller/PostsController.php(8): spl_autoload_call('AppController')
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Core/App.php(567): include('/home/andersonl...')
+#3 [internal function]: App::load('PostsController')
+#4 [internal function]: spl_autoload_call('PostsController')
+#5 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#6 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#10 {main}
+2019-09-04 17:37:26 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2019-09-04 17:37:26 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2019-09-04 17:37:53 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Datasource/DboSource.php(278): Mysql->connect()
+#1 /home/andersonlucas/repositorios/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#5 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /home/andersonlucas/repositorios/cake/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /home/andersonlucas/repositorios/cake/app/Controller/PostsController.php(17): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /home/andersonlucas/repositorios/cake/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/andersonlucas/repositorios/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /home/andersonlucas/repositorios/cake/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 /home/andersonlucas/repositorios/cake/index.php(41): require('/home/andersonl...')
+#14 {main}

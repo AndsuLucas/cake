@@ -1,6 +1,6 @@
 <?php
 
-<<<<<<< HEAD
+
 
 
 class UsersController extends AppController
@@ -18,7 +18,6 @@ class UsersController extends AppController
 		
 	}
 
-=======
 class UsersController extends AppController
 {
 	public $name = "Users";
@@ -63,5 +62,5 @@ class UsersController extends AppController
 		debug($this->referer());
 		$this->set("number_choice", $number_choice);
 	}
->>>>>>> refs/remotes/origin/master
+
 }
